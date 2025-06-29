@@ -1715,6 +1715,9 @@ button[type="reset"]:hover {
   pointer-events: auto;
 }
 .form-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
   color: white;
   border: 1px solid white;
@@ -1724,12 +1727,19 @@ button[type="reset"]:hover {
   cursor: pointer;
   text-align: center;
   transition: background-color 0.3s ease, color 0.3s ease;
+  height: 48px;
+  line-height: 1;
+  min-width: 150px;
+	/* 👇 Добавлено для шрифта как у полей */
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
 }
 
 .form-button:hover {
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
 }
+
 
 ul.actions {
   display: flex;
