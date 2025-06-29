@@ -426,15 +426,23 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 <script>
-  const buttons = document.querySelectorAll(".dropdown-btn");
-  buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      btn.classList.toggle("active");
-      const content = btn.nextElementSibling;
-      content.style.display = content.style.display === "block" ? "none" : "block";
+  const accordions = document.querySelectorAll(".accordion");
+
+  accordions.forEach((accordion) => {
+    accordion.addEventListener("click", () => {
+      const panel = accordion.parentElement.nextElementSibling;
+
+      document.querySelectorAll(".panel").forEach(p => {
+        if (p !== panel) {
+          p.classList.remove("open");
+        }
+      });
+
+      panel.classList.toggle("open");
     });
   });
 </script>
+
 
 
 	</body>
