@@ -1688,57 +1688,48 @@ input, select, textarea {
   color: #333;
 }
 
-/* Стили карточек */
 .service-card {
+  background-color: transparent;
   margin-bottom: 2em;
-  text-align: center;
-}
-
-.service-card img {
-  width: 64px;
-  height: 64px;
-  margin-bottom: 1em;
-}
-
-/* Кнопка аккордеона */
-.accordion {
-  background-color: #2e2e2e;
-  color: #fff;
-  cursor: pointer;
   padding: 1em;
-  width: 100%;
+  border-radius: 0.75em;
+}
+
+.service-header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 0.5em;
+}
+
+.service-header img {
+  width: 40px;
+  height: 40px;
+}
+
+.accordion {
+  flex: 1;
+  background-color: #1a1a1a;
+  color: white;
   border: none;
-  outline: none;
-  text-align: center;
-  font-size: 1.2em;
-  transition: background-color 0.3s ease;
+  padding: 1em;
+  font-size: 1.1em;
+  text-align: left;
+  cursor: pointer;
   border-radius: 0.5em;
+  transition: background-color 0.3s ease;
 }
 
 .accordion:hover {
-  background-color: #444;
+  background-color: #333;
 }
 
-/* Раскрывающаяся панель */
 .panel {
-  padding: 0 1em;
+  background-color: #2e2e2e;
+  color: #f0f0f0;
+  padding: 1em;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-out;
-  background-color: #f7f7f7;
   border-radius: 0.5em;
-  text-align: left;
-  margin-top: 0.5em;
+  transition: max-height 0.3s ease-out;
 }
-
-/* Текст описания услуги */
-.service-desc {
-  background-color: #ffffff;
-  padding: 1em;
-  border-radius: 0.5em;
-  font-size: 0.95em;
-  color: #333;
-  box-shadow: 0 0 5px rgba(0,0,0,0.05);
-  margin-top: 0.5em;
-}
-
