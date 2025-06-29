@@ -1692,31 +1692,32 @@ input, select, textarea {
   margin-bottom: 2em;
 }
 
-.service-header {
+.accordion-header {
   display: flex;
   align-items: center;
   gap: 1em;
+  margin-bottom: 0.5em;
 }
 
-.service-header img {
-  width: 48px;
-  height: 48px;
+.accordion-header .icon {
+  width: 40px;
+  height: 40px;
 }
 
 .accordion {
   flex: 1;
   background-color: #1a1a1a;
-  color: white;
+  color: #fff;
   border: none;
   padding: 1em;
   font-size: 1.1em;
   text-align: center;
   cursor: pointer;
   border-radius: 0.5em;
-  transition: background-color 0.3s ease;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.3s ease;
 }
 
 .accordion:hover {
@@ -1726,20 +1727,18 @@ input, select, textarea {
 .panel {
   background-color: #2a2a2a;
   color: #fff;
-  padding: 0 1em; /* Сброс вертикального паддинга */
-  border-radius: 0.5em;
-  max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+  border-radius: 0.5em;
+  padding: 0 1em;
   opacity: 0;
   pointer-events: none;
-	
-	.panel.open {
+}
+
+.panel.open {
   padding: 1em;
+  max-height: 500px; /* Предельная высота при открытии */
   opacity: 1;
   pointer-events: auto;
-}
-
-}
-
 }
