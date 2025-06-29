@@ -1678,3 +1678,67 @@ input, select, textarea {
 .language-switcher img:hover {
   transform: scale(1.1);
 }
+/* Вводный текст */
+.services-intro {
+  margin-bottom: 2em;
+  background: rgba(255,255,255,0.9);
+  padding: 1em;
+  border-radius: 0.5em;
+  font-size: 1em;
+  color: #333;
+}
+
+/* Стили карточек */
+.service-card {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.service-card img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1em;
+}
+
+/* Кнопка аккордеона */
+.accordion {
+  background-color: #2e2e2e;
+  color: #fff;
+  cursor: pointer;
+  padding: 1em;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+  border-radius: 0.5em;
+}
+
+.accordion:hover {
+  background-color: #444;
+}
+
+/* Раскрывающаяся панель */
+.panel {
+  padding: 0 1em;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  background-color: #f7f7f7;
+  border-radius: 0.5em;
+  text-align: left;
+  margin-top: 0.5em;
+}
+
+/* Текст описания услуги */
+.service-desc {
+  background-color: #ffffff;
+  padding: 1em;
+  border-radius: 0.5em;
+  font-size: 0.95em;
+  color: #333;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  margin-top: 0.5em;
+}
+
