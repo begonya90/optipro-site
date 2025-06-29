@@ -425,24 +425,23 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 <script>
-  document.querySelectorAll('.accordion').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const panel = btn.parentElement.nextElementSibling;
+  const accordions = document.querySelectorAll(".accordion");
 
-      // Закрыть все открытые
-      document.querySelectorAll('.panel').forEach(p => {
-        p.classList.remove("open");
-        p.style.maxHeight = null;
+  accordions.forEach((accordion) => {
+    accordion.addEventListener("click", () => {
+      const panel = accordion.parentElement.nextElementSibling;
+
+      document.querySelectorAll(".panel").forEach(p => {
+        if (p !== panel) {
+          p.classList.remove("open");
+        }
       });
 
-      // Если текущая была закрыта — открыть
-      if (!panel.classList.contains("open")) {
-        panel.classList.add("open");
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      }
+      panel.classList.toggle("open");
     });
   });
 </script>
+
 
 	</body>
 </html>
