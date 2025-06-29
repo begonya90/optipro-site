@@ -1689,22 +1689,18 @@ input, select, textarea {
 }
 
 .service-card {
-  background-color: transparent;
   margin-bottom: 2em;
-  padding: 1em;
-  border-radius: 0.75em;
 }
 
 .service-header {
   display: flex;
   align-items: center;
   gap: 1em;
-  margin-bottom: 0.5em;
 }
 
 .service-header img {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
 }
 
 .accordion {
@@ -1714,10 +1710,13 @@ input, select, textarea {
   border: none;
   padding: 1em;
   font-size: 1.1em;
-  text-align: left;
+  text-align: center;
   cursor: pointer;
   border-radius: 0.5em;
   transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .accordion:hover {
@@ -1728,8 +1727,9 @@ input, select, textarea {
   background-color: #2e2e2e;
   color: #f0f0f0;
   padding: 1em;
+  border-radius: 0.5em;
   max-height: 0;
   overflow: hidden;
-  border-radius: 0.5em;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.4s ease-out;
+  margin-top: 0.5em;
 }
