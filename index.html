@@ -128,11 +128,28 @@
   </ul>
 								<form action="https://api.web3forms.com/submit" method="POST">
   <input type="hidden" name="access_key" value="32f7bb82-7fd2-4be1-8ada-73ce596a4195" />
-  <input type="text" name="name" placeholder="Ваше имя" required>
-  <input type="email" name="email" placeholder="Ваш email" required>
-  <textarea name="message" placeholder="Сообщение" required></textarea>
-  <button type="submit">Отправить</button>
+
+  <div class="fields">
+    <div class="field half">
+      <label for="name">Ваше имя</label>
+      <input type="text" name="name" id="name" required />
+    </div>
+    <div class="field half">
+      <label for="email">Ваш email</label>
+      <input type="email" name="email" id="email" required />
+    </div>
+    <div class="field">
+      <label for="message">Сообщение</label>
+      <textarea name="message" id="message" rows="5" required></textarea>
+    </div>
+  </div>
+
+  <ul class="actions">
+    <li><button type="submit" class="primary">Отправить</button></li>
+    <li><button type="reset">Сбросить</button></li>
+  </ul>
 </form>
+
 
 								<ul class="icons">
 									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
