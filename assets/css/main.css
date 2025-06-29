@@ -1724,12 +1724,22 @@ input, select, textarea {
 }
 
 .panel {
-  background-color: #2e2e2e;
-  color: #f0f0f0;
-  padding: 1em;
+  background-color: #2a2a2a;
+  color: #fff;
+  padding: 0 1em; /* Сброс вертикального паддинга */
   border-radius: 0.5em;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-out;
-  margin-top: 0.5em;
+  transition: max-height 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+	
+	.panel.open {
+  padding: 1em;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+}
+
 }
