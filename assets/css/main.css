@@ -1714,6 +1714,35 @@ button[type="reset"]:hover {
   opacity: 1;
   pointer-events: auto;
 }
+.form-button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 0.75em 2em;
+  border-radius: 0.5em;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+ul.actions {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  justify-content: flex-start;
+}
+
+ul.actions li {
+  margin: 0;
+}
 
   
 
