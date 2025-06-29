@@ -409,18 +409,19 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<!-- BG -->
 		<script>
   const acc = document.querySelectorAll(".accordion");
-  acc.forEach(button => {
-    button.addEventListener("click", () => {
-      button.classList.toggle("active");
-      const panel = button.nextElementSibling;
+  acc.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const panel = btn.parentElement.nextElementSibling;
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
       } else {
+        document.querySelectorAll(".panel").forEach(p => p.style.maxHeight = null);
         panel.style.maxHeight = panel.scrollHeight + "px";
       }
     });
   });
 </script>
+
 
 			<div id="bg"></div>
 <div class="language-switcher">
