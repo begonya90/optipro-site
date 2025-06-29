@@ -126,26 +126,14 @@
     <li><strong>Телефон:</strong> <a href="tel:+99365534028, +99365483888">+993 65534028, +99365483888</a></li>
     <li><strong>Email:</strong> <a href="mailto:info@opti-pro.net">info@opti-pro.net</a></li>
   </ul>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Имя</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Электронная почта</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Комментарии</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
+								<form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="32f7bb82-7fd2-4be1-8ada-73ce596a4195" value="32f7bb82-7fd2-4be1-8ada-73ce596a4195" />
+  <input type="text" name="name" placeholder="Ваше имя" required>
+  <input type="email" name="email" placeholder="Ваш email" required>
+  <textarea name="message" placeholder="Сообщение" required></textarea>
+  <button type="submit">Отправить</button>
+</form>
+
 								<ul class="icons">
 									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="#" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
