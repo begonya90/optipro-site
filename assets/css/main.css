@@ -1749,6 +1749,25 @@ ul.actions li {
   margin: 0;
 }
 
+.form-success {
+  margin-top: 1em;
+  padding: 1em;
+  background-color: #2a2a2a;
+  color: #00ff95;
+  border: 1px solid #00ff95;
+  border-radius: 0.5em;
+  text-align: center;
+  font-size: 1em;
+  animation: fadeInOut 3s ease forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
 
   
 
