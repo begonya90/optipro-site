@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://opti-pro.net/sitemap.xml
